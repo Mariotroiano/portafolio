@@ -1,0 +1,205 @@
+@font-face {
+  font-family: homework;
+  src: url("fonts/Homework.ttf");
+}
+@font-face {
+  font-family: blackBruno;
+  src: url("fonts/BlackBruno.otf");
+}
+
+/*///////////////////////////    general     /////////////////////////////*/
+*{
+  margin : 0px;
+  padding : 0px;
+
+}
+body {
+  font-size: 20px;
+  background: url('../image/fondoBody.jpg');
+  background-attachment: fixed;
+
+}
+.clearFixed{
+  float:none;
+  clear: both;
+}
+/*///////////////////////////   barra navegacion / header     /////////////////////////////*/
+header{
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: rgba(162, 154, 53, 0.8);
+  position: fixed;
+  text-transform: uppercase;
+
+}
+header ul{
+  height: inherit;
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 100px;
+  margin-top: -17.7px;
+}
+  header ul li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 100px;
+  }
+    header ul li a {
+      display: block;
+      height: inherit;
+      padding-right: 20px;
+      padding-left: 20px;
+      text-decoration: none;
+      transition: all 300ms;
+      color: white;
+      
+      
+      
+    }
+   #link {
+    font-family: homework;
+    font-size: 25px;
+  }
+  header a:hover,
+  .actived{
+    background: rgba(60, 56, 11, 0.80);
+  }
+  header #logo a:hover {
+    background : transparent;
+  }
+#logo {
+  font-family: blackBruno ;
+  font-size: 60px;
+}
+/* ////////////////////////////////////////////       Contenido principal / section  ///////////////////////*/
+#content{
+
+  min-height: 500px;
+  width: 75%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 40px black;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 120px;
+}
+/*////////////////////////////////// footer//////////////////////////////////////////*/
+footer {
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 20px;
+  color: rgba(0 , 0, 0, 0.5);
+}
+/*/////////////////// about component ////////////*/
+#tittle{
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 60px;
+  text-align: center;
+
+}
+#tittle h1{
+
+  font-family: homework;
+  font-size: 60px;
+  margin-bottom: 10px;
+
+}
+
+
+#tittle h3{
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: gray;
+}
+#tittle p{
+
+  color: gray;
+}
+
+article.about {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.about h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  }
+.about p{
+
+  text-align: justify;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}  
+/*/////////////////////////////// contenedor/ create   */
+
+.contenedor{
+
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+.contenedor h2{
+  display: block;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+form{
+ 
+  width: 90%;
+}
+form label{
+  display:block;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+  form input[type='text'],
+  form input[type='number'],
+  form input[type='email'],
+  form textarea{
+
+    width: 50%;
+    padding: 5px;
+  }
+  form button,
+  form input[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgba(162, 154, 53, 0.8);
+    border-color: rgba(162, 154, 53, 0.8);
+    cursor: pointer;
+  }
+  form button:hover,
+  form input[type="submit"]:hover {
+    
+    background: rgba(162, 154, 53, 0.5);
+    border-color: rgba(162, 154, 53, 0.8);
+    cursor: pointer;
+  }
+
+  form input[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+   
+
+.form-error {
+  font-size: 10px;
+  padding: 6px;
+  margin-left: 5px;
+  color: white;
+  background: red;
+}     

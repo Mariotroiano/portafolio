@@ -1,0 +1,24 @@
+<header>
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']" id="link">Sobre mi</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']" id="link">Proyectos</a></li>
+    <li id="logo" ><a  href="#">MT</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']" id="link">Crear proyecto</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']" id="link">Contacto</a></li>
+
+  </ul>
+</header>
+
+
+<section id="content">
+
+<router-outlet></router-outlet>
+
+
+</section>
+
+<footer>
+
+  <p>Mario Troiano portafolio &copy;</p>
+
+</footer>
